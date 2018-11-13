@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Владимир Ткачев](https://up.htmlacademy.ru/htmlcss/23/user/109549).
-* Наставник: [Ваксим Корелин](https://htmlacademy.ru/profile/maxzbest).
+* Наставник: [Максим Корелин](https://htmlacademy.ru/profile/maxzbest).
 
 ---
 
