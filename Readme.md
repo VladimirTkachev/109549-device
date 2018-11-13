@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Владимир Ткачев](https://up.htmlacademy.ru/htmlcss/23/user/109549).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
