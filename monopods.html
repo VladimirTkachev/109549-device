@@ -9,17 +9,40 @@
         <h1>Device</h1>
         <input class="search" type="text" placeholder="Поиск по сайту"/>
         <div class="user">
-            <div>Валентин Петухов</div>
-            <div class="login onLogin">Выйти</div>
+            <a href="#">Валентин Петухов</a>
+            <button class="login onLogin">Выйти</button>
         </div>
-        <div class="diff">Сравнить</div>
-        <div class="basket">Корзина</div>
+        <a href="#" class="diff">Сравнить</a>
+        <a href="#" class="basket">Корзина</a>
         <a href="#" class="link">Каталог товаров</a>
         <a href="#" class="link">Доставка</a>
         <a href="#" class="link">Гарантии</a>
         <a href="#" class="link">Контакты</a>
     </header>
     <main>
+        <section class="popular inner">
+            <h2 class="visually-hidden">Популярные товары</h2>
+            <ul>
+                <li>
+                    <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                    <a href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                    <a href="#">Экшн-камеры</a>
+                </li>
+                <li>
+                    <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                    <a href="#">Умные часы</a>
+                </li>
+                <li>
+                    <a href="#">Квадракоптеры</a>
+                </li>
+            </ul>
+        </section>
         <section class="nav">
             <h2>Моноподы для селфи</h2>
             <ul class="bread-crumbs">
@@ -34,8 +57,70 @@
                 </li>
             </ul>
         </section>
+        <section class="filter">
+            <h2 class="visually-hidden">Фильтр товара</h2>
+            <form>
+                <ul class="filters">
+                    <li class="filter">
+                        <p>Цвет</p>
+                        <ul class="filter filter-items">
+                            <li class="filter-item input">
+                                <label>
+                                    Черный
+                                    <input type="checkbox" checked/>
+                                </label>
+                            </li>
+                            <li class="filter-item input">
+                                <label>
+                                    Белый
+                                    <input type="checkbox"/>
+                                </label>
+                            </li>
+                            <li class="filter-item input">
+                                <label>
+                                    Синий
+                                    <input type="checkbox" checked/>
+                                </label>
+                            </li>
+                            <li class="filter-item input">
+                                <label>
+                                    Красный
+                                    <input type="checkbox" checked/>
+                                </label>
+                            </li>
+                            <li class="filter-item input">
+                                <label>
+                                    Розовый
+                                    <input type="checkbox"/>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="filter">
+                        <p>Bluetooth</p>
+                        <ul class="filter filter-items">
+                            <li class="filter-item radio">
+                                <label>
+                                    Есть
+                                    <input type="radio" name="bluetooth" checked/>
+                                </label>
+                            </li>
+                            <li class="filter-item radio">
+                                <label>
+                                    Нет
+                                    <input type="radio" name="bluetooth"/>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="submit" class="btn">
+                    Показать
+                </button>
+            </form>
+        </section>
         <section class="list">
-            <h2>Ассортимент</h2>
+            <h2 class="visually-hidden">Ассортимент</h2>
             <ul>
                 <li>
                     <a href="#" class="link btn">
