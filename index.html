@@ -9,10 +9,10 @@
       <h1>Device</h1>
       <input class="search" type="text" placeholder="Поиск по сайту"/>
       <div class="user">
-          <div class="login">Войти</div>
+          <a href="#" class="login">Войти</a>
       </div>
-      <div class="diff">Сравнить</div>
-      <div class="basket">Корзина</div>
+      <a href="#" class="diff">Сравнить</a>
+      <a href="#" class="basket">Корзина</a>
       <a href="#" class="link">Каталог товаров</a>
       <a href="#" class="link">Доставка</a>
       <a href="#" class="link">Гарантии</a>
@@ -183,6 +183,40 @@
           </li>
         </ul>
     </footer>
+    <section class="modal modal-write">
+      <h2 class="visually-hidden">
+        Напишите нам
+      </h2>
+      <button type="button" class="btn btn-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <form action="">
+        <label>
+          Ваше имя:
+          <input type="text" placeholder="Имя Фамилия"/>
+        </label>
+        <label>
+          Ваш e-mail:
+          <input type="text" placeholder="email@example.com"/>
+        </label>
+        <label>
+          Текст письма:
+          <input type="text" placeholder="В свободной форме"/>
+        </label>
+        <button type="submit" class="btn">
+          Отправить
+        </button>
+      </form>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">
+        Наше место положения
+      </h2>
+      <button type="button" class="btn btn-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <img src="./img/map-big.jpg" alt="Карта" width="960px" height="560px">
+    </section>
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
