@@ -3,16 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
   </head>
   <body>
-    <header>
-      <h1>Device</h1>
+    <header class="header">
+      <h1 class="visually-hidden">Магазин электроники "Device"</h1>
+      <a class="link title">Device</a>
       <input class="search" type="search" placeholder="Поиск по сайту"/>
       <div class="user">
-          <a href="#" class="login">Войти</a>
+          <a href="#" class="link login">Войти</a>
       </div>
-      <a href="#" class="diff">Сравнить</a>
-      <a href="#" class="basket">Корзина</a>
+      <a href="#" class="link diff">Сравнить</a>
+      <a href="#" class="link basket">Корзина</a>
       <a href="#" class="link">Каталог товаров</a>
       <a href="#" class="link">Доставка</a>
       <a href="#" class="link">Гарантии</a>
@@ -104,14 +108,14 @@
         </ul>
       </section>
       <section class="info">
-        <h2>О НАС</h2>
+        <h2 class="title title-info">О нас</h2>
         <p>
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
         </p>
         <p>
           Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
         </p>
-        <ul>
+        <ul class="couriers">
           <li>
             <a href="#" class="link">Деловые Линии</a>
           </li>
@@ -124,12 +128,12 @@
         </ul>
         <a href="#" class="link">
           <b>
-            ПОДРОБНЕЕ О НАС
+            Подробнее о нас
           </b>
         </a>
       </section>
       <section class="contacts">
-        <h2>КОНТАКТЫ</h2>
+        <h2 class="title title-contacts">Контакты</h2>
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
@@ -139,51 +143,50 @@
         </div>
         <a href="#" class="link">
             <b>
-              НАПИШИТЕ НАМ
+              Напишите нам
             </b>
           </a>
       </section>
     </main>
-    <footer>
-      <h1>Device</h1>
+    <footer class="footer">
+      <a class="link title title-footer">Device</a>
       <p>г. Москва, ул. Строителей, 15</p>
       <p>Тел.: +7 (495) 495-95-95</p>
       <div class="user">
-          <a href="#" class="login">Войти</a>
+          <a href="#" class="link login login-footer">Войти</a>
       </div>
-      <a href="#" class="diff">Сравнить</a>
-      <a href="#" class="basket">Корзина</a>
-      <a href="#" class="link">КАТАЛОГ ТОВАРОВ</a>
+      <a href="#" class="link diff diff-footer">Сравнить</a>
+      <a href="#" class="link basket basket-footer">Корзина</a>
       <ul>
           <li>
-            <a href="#" class="link footer">Доставка</a>
+            <a href="#" class="link link-footer">Доставка</a>
           </li>
           <li>
-            <a href="#" class="link footer">Гарантии</a>
+            <a href="#" class="link link-footer">Гарантии</a>
           </li>
           <li>
-            <a href="#" class="link footer">Контакты</a>
+            <a href="#" class="link link-footer">Контакты</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="#" class="link btn vk">
+            <a href="#" class="link link-fs">
               <img src="./img/Facebook.svg" alt="Facebook" width="32px" height="32px"/>
             </a>
           </li>
           <li>
-            <a href="#" class="link btn vk">
+            <a href="#" class="link link-ig">
               <img src="./img/Inatsgram.svg" alt="Instagram" width="32px" height="32px"/>
             </a>
           </li>
           <li>
-            <a href="#" class="link btn vk">
+            <a href="#" class="link link-tw">
               <img src="./img/Twitter.svg" alt="Twitter" width="32px" height="32px"/>
             </a>
           </li>
         </ul>
     </footer>
-    <section class="modal modal-write">
+    <section class="modal modal-write" style="display: none;">
       <h2 class="visually-hidden">
         Напишите нам
       </h2>
@@ -208,7 +211,7 @@
         </button>
       </form>
     </section>
-    <section class="modal modal-map">
+    <section class="modal modal-map" style="display: none;">
       <h2 class="visually-hidden">
         Наше место положения
       </h2>

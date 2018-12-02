@@ -1,0 +1,308 @@
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy"), local("Gilroy-ExtraBold"), local("Gilroy-Light")
+         url("../fonts/web/gilroyextrabold.woff2") format("woff2"),
+         url("../fonts/web/gilroylight.woff2") format("woff");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #ffffff;
+    background-position: top center;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+    color: black;
+}
+.link:hover {
+    opacity: 0.6;
+}
+.link:active {
+    opacity: 0.3;
+}
+
+.header {
+    background-color: #f7e296;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    line-height: 48px;
+    font-size: 48px;
+    color: black;
+    cursor: pointer;
+}
+.title:hover {
+    opacity: 0.6;
+}
+.title:active {
+    opacity: 0.3;
+}
+
+.search,
+.login,
+.diff,
+.basket,
+.user {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    line-height: 30px;
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+}
+.search:hover,
+.login:hover,
+.diff:hover,
+.diff:hover,
+.user:hover {
+    opacity: 0.6;
+}
+.search:active,
+.login:active,
+.diff:active,
+.diff:active,
+.user:active {
+    opacity: 0.3;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.info {
+    background-color: #ffffff;
+}
+
+.title-info {
+    text-transform: capitalize;
+    cursor: text;
+}
+.title-info:hover,
+.title-info:active {
+    opacity: 1;
+}
+
+.info p {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    line-height: 30px;
+    font-size: 15px; 
+}
+
+.couriers{
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+/* .info a {
+    text-transform: uppercase;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    line-height: 24px;
+    font-size: 18px; 
+} */
+
+.contacts {
+    background-color: #ffffff;
+}
+
+.title-contacts {
+    text-transform: none;
+    cursor: text;
+}
+.title-contacts:hover,
+.title-contacts:active {
+    opacity: 1;
+}
+
+.contacts p {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    line-height: 30px;
+    font-size: 15px; 
+}
+
+/* .contacts a {
+    text-transform: uppercase;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+} */
+
+.footer {
+    background-color: #464646;
+}
+
+.title-footer {
+    color: #ffc600;
+}
+
+.footer p {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    line-height: 30px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.login-footer,
+.diff-footer,
+.basket-footer {
+    color: #ffffff;
+    opacity: 0.7;
+}
+.login-footer:hover,
+.diff-footer:hover,
+.basket-footer:hover {
+    opacity: 1;
+}
+.login-footer:active,
+.diff-footer:active,
+.basket-footer:active {
+    opacity: 0.3;
+}
+
+.link-footer {
+    color: #ffffff;
+    text-transform: none;
+}
+
+.link-fs,
+.link-ig,
+.link-tw {
+    fill: #ffffff;
+    opacity: 0.3;
+}
+.link-fs:hover,
+.link-ig:hover,
+.link-tw:hover {
+    opacity: 0.6;
+}
+.link-fs:active,
+.link-ig:active,
+.link-tw:active {
+    opacity: 0.1;
+}
+
+.inner {
+    background-color: #f7e296;
+}
+
+.link-inner {
+    text-transform: none;
+}
+
+.link-crumb,
+.link-crumb:hover,
+.link-crumb:active {
+    text-transform: capitalize;
+    opacity: 0.3;
+}
+
+.not-link {
+    cursor: default;
+}
+
+.filter p {
+    text-transform: capitalize;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    line-height: 24px;
+    font-size: 18px; 
+}
+
+.filter-items {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+    color: black;
+}
+
+.submit {
+    text-transform: uppercase;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+.btn-item,
+.btn-differ {
+    opacity: 0;
+    cursor: none;
+    pointer-events: none;
+}
+
+.item:hover .btn-item {
+    text-transform: uppercase;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+    color: black;
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.item:hover .btn-item:active {
+    opacity: 0.3;
+}
+
+.item:hover .btn-differ {
+    opacity: 0.5;
+    cursor: pointer;
+    pointer-events: auto;
+    text-transform: default;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: black;
+}
+.item:hover .btn-differ:hover {
+    opacity: 1;
+}
+.item:hover .btn-differ:active {
+    opacity: 0.2;
+}
+
+.item-name {
+    text-transform: uppercase;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+    color: black;
+}
+
+.price {
+    font-family: "Gilroy Light", Arial, sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: #464646;
+}
+
+.user-footer {
+    color: white;
+}
+
+.btn-footer {
+    color: white;
+}
+
+.services {
+    text-transform: uppercase;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+    color: white;
+}
+.services:hover {
+    opacity: 0.6;
+}
+.services:active {
+    opacity: 0.3;
+}

@@ -3,17 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
 </head>
 <body>
-    <header>
-        <h1>Device</h1>
+    <header class="header">
+        <h1 class="visually-hidden">Фильтр товаров</h1>
+        <a class="link title">Device</a>
         <input class="search" type="search" placeholder="Поиск по сайту"/>
-        <div class="user">
-            <a href="#">Валентин Петухов</a>
-            <button type="button" class="login onLogin">Выйти</button>
+        <div>
+            <a href="#" class="link user">Валентин Петухов</a>
+            <button type="button" class="user btn">Выйти</button>
         </div>
-        <a href="#" class="diff">Сравнить</a>
-        <a href="#" class="basket">Корзина</a>
+        <a href="#" class="link diff">Сравнить</a>
+        <a href="#" class="link basket">Корзина</a>
         <a href="#" class="link">Каталог товаров</a>
         <a href="#" class="link">Доставка</a>
         <a href="#" class="link">Гарантии</a>
@@ -24,36 +28,36 @@
             <h2 class="visually-hidden">Популярные товары</h2>
             <ul>
                 <li>
-                    <a href="#">Виртуальная реальность</a>
+                    <a href="#" class="link link-inner">Виртуальная реальность</a>
                 </li>
                 <li>
-                    <a href="#">Моноподы для селфи</a>
+                    <a href="#" class="link link-inner">Моноподы для селфи</a>
                 </li>
                 <li>
-                    <a href="#">Экшн-камеры</a>
+                    <a href="#" class="link link-inner">Экшн-камеры</a>
                 </li>
                 <li>
-                    <a href="#">Фитнес-браслеты</a>
+                    <a href="#" class="link link-inner">Фитнес-браслеты</a>
                 </li>
                 <li>
-                    <a href="#">Умные часы</a>
+                    <a href="#" class="link link-inner">Умные часы</a>
                 </li>
                 <li>
-                    <a href="#">Квадракоптеры</a>
+                    <a href="#" class="link link-inner">Квадракоптеры</a>
                 </li>
             </ul>
         </section>
         <section class="nav">
-            <h2>Моноподы для селфи</h2>
+            <h2 class="visually-hidden">Моноподы для селфи</h2>
             <ul class="bread-crumbs">
                 <li>
-                    <a href="#" class="link crumb">Главная</a>
+                    <a href="#" class="link link-crumb">Главная</a>
                 </li>
                 <li>
-                    <a href="#" class="link crumb">Каталог товаров</a>
+                    <a href="#" class="link link-crumb">Каталог товаров</a>
                 </li>
                 <li>
-                    <a class="link">Моноподы для селфи</a>
+                    <a  class="link link-crumb not-link">Моноподы для селфи</a>
                 </li>
             </ul>
         </section>
@@ -114,40 +118,64 @@
                         </ul>
                     </li>
                 </ul>
-                <button type="submit" class="btn">
+                <button type="submit" class="btn submit">
                     Показать
                 </button>
             </form>
         </section>
         <section class="list">
             <h2 class="visually-hidden">Ассортимент</h2>
-            <ul>
-                <li>
-                    <a href="#" class="link btn">
+            <ul class="items">
+                <li class="item">
+                    <a href="#" class="link link-tem">
                         <img src="./img/item-1.jpg" alt="Любительская селфи-палка"/>
                     </a>
-                    <b>Любительская селфи-палка</b>
+                    <button type="button" class="btn btn-item">
+                        В корзину
+                    </button>
+                    <button type="button" class="btn btn-differ">
+                        Добавить к сравнению
+                    </button>
+                    <b class="item-name">Любительская селфи-палка</b>
                     <span class="price">500 руб.</span>
                 </li>
-                <li>
-                    <a href="#" class="link btn">
+                <li class="item">
+                    <a href="#" class="link link-tem">
                         <img src="./img/item-2.jpg" alt="Профессиональная селфи-палка"/>
                     </a>
-                    <b>Профессиональная селфи-палка</b>
+                    <button type="button" class="btn btn-item">
+                        В корзину
+                    </button>
+                    <button type="button" class="btn btn-differ">
+                        Добавить к сравнению
+                    </button>
+                    <b class="item-name">Профессиональная селфи-палка</b>
                     <span class="price">1 500 руб.</span>
                 </li>
-                <li>
-                    <a href="#" class="link btn">
+                <li class="item">
+                    <a href="#" class="link link-tem">
                         <img src="./img/item-3.jpg" alt="Непотопляемая селфи-палка"/>
                     </a>
-                    <b>Непотопляемая селфи-палка</b>
+                    <button type="button" class="btn btn-item">
+                        В корзину
+                    </button>
+                    <button type="button" class="btn btn-differ">
+                        Добавить к сравнению
+                    </button>
+                    <b class="item-name">Непотопляемая селфи-палка</b>
                     <span class="price">2 500 руб.</span>
                 </li>
-                <li>
-                    <a href="#" class="link btn">
+                <li class="item">
+                    <a href="#" class="link link-tem">
                         <img src="./img/item-4.jpg" alt="Селфи-палка «Следуй за мной»"/>
                     </a>
-                    <b>Селфи-палка «Следуй за мной»</b>
+                    <button type="button" class="btn btn-item">
+                        В корзину
+                    </button>
+                    <button type="button" class="btn btn-differ">
+                        Добавить к сравнению
+                    </button>
+                    <b class="item-name">Селфи-палка «Следуй за мной»</b>
                     <span class="price">4 900 руб.</span>
                 </li>
             </ul>
@@ -169,44 +197,43 @@
             <a href="#" class>Вперед</a>
         </section>
     </main>
-    <footer>
-        <h1>Device</h1>
+    <footer class="footer">
+        <a class="link title title-footer">Device</a>
         <p>г. Москва, ул. Строителей, 15</p>
         <p>Тел.: +7 (495) 495-95-95</p>
-        <div class="user">
-            <a href="#">Валентин Петухов</a>
-            <a href="#" class="login onLogin">Выйти</a>
+        <div>
+            <a href="#" class="link user user-footer">Валентин Петухов</a>
+            <button type="button" class="user btn btn-footer">Выйти</button>
         </div>
-        <a href="#" class="diff">Сравнить</a>
-        <a href="#" class="basket">Корзина</a>
-        <a href="#" class="link">Каталог товаров</a>
+        <a href="#" class="link diff diff-footer">Сравнить</a>
+        <a href="#" class="link basket basket-footer">Корзина</a>
         <ul>
             <li>
-                <a href="#" class="link footer">Доставка</a>
+                <a href="#" class="link services">Доставка</a>
             </li>
             <li>
-                <a href="#" class="link footer">Гарантии</a>
+                <a href="#" class="link services">Гарантии</a>
             </li>
             <li>
-                <a href="#" class="link footer">Контакты</a>
+                <a href="#" class="link services">Контакты</a>
             </li>
-            </ul>
+        </ul>
             <ul>
-            <li>
-                <a href="#" class="link btn vk">
-                <img src="" alt="Facebook" width="32px" height="32px"/>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="link btn vk">
-                <img src="" alt="Instagram" width="32px" height="32px"/>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="link btn vk">
-                <img src="" alt="Twitter" width="32px" height="32px"/>
-                </a>
-            </li>
+                <li>
+                    <a href="#" class="link link-fs">
+                    <img src="./img/Facebook.svg" alt="Facebook" width="32px" height="32px"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link link-ig">
+                    <img src="./img/Inatsgram.svg" alt="Instagram" width="32px" height="32px"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link link-tw">
+                    <img src="./img/Twitter.svg" alt="Twitter" width="32px" height="32px"/>
+                    </a>
+                </li>
             </ul>
         </footer>
 </body>
